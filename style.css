@@ -1,4 +1,30 @@
-p{
+/* p{
     font-family: 'Roboto';
     font-weight: 800
+} */
+
+
+img{
+    height: 1em;
+}
+
+svg{
+    height: 1em;
+    fill: currentColor;
+}
+
+.tabs{
+    color: red;
+}
+
+.svg {
+    fill: currentColor;
+    line-height: 1;
+    height: 1em;
+    width: 1em; 
+}
+
+
+h4{
+    gap: 5px;
 }
