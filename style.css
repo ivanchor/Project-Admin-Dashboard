@@ -24,7 +24,7 @@ body{
     grid-auto-rows: 50px;
 }
 
-.sidebar a{
+.tabs > a{
     color: inherit;
     text-decoration: none;
 }
@@ -32,15 +32,15 @@ body{
 li.tabs{
     display: grid;
     grid-template-columns: 1fr 10fr;
+    gap: 10px;
     color: white;
     /* justify-self: center; */
 }
 
-/* li.tabs {
-  display: flex;
-  align-items: center; /* vertical centering */
-  gap: 8px;            /* space between svg and text */
-} */
+li.tabs > svg{
+    justify-self: center;
+}
+
 
 .dashboard{
     font-size: 1.5em;
