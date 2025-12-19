@@ -6,7 +6,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 5fr;
     font-size: 20px;
 
 }
@@ -20,7 +20,6 @@ body{
 .side_tab{
     display: grid;
     grid-template-rows: repeat(10, 50px);
-    /* grid-template-columns: 10px 50px; */
     grid-auto-rows: 50px;
 }
 
@@ -34,7 +33,6 @@ li.tabs{
     grid-template-columns: 1fr 10fr;
     gap: 10px;
     color: white;
-    /* justify-self: center; */
 }
 
 li.tabs > svg{
@@ -51,8 +49,36 @@ li.tabs > svg{
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 1fr;
+    padding: 20px;
 }
 
+.header > .search_bar{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+#search{
+    height: 1em;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+}
+
+.menu_button{
+    color: white;
+    background-color: lightskyblue;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    width: 100px;
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.24) */
+}
+
+.menu_button:active{
+    transform: scale(0.98);
+}
 
 /* Main Section */
 .main_section{
