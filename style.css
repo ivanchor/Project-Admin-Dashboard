@@ -9,7 +9,7 @@ body{
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
     font-size: 20px;
-    height: 1vh
+    height: 100vh;
 }
 
 /* Sidebar Section */
@@ -90,7 +90,6 @@ li.tabs > svg{
     border: none;
     height: 30px;
     width: 100px;
-    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.24) */
 }
 
 .menu_button:active{
@@ -100,17 +99,61 @@ li.tabs > svg{
 /* Main Section */
 .main_section{
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    background-color: lightgray;
 }
 
+.title{
+    grid-column: 1/-1;
+    height: 1em;
+    align-self: center;
+    font-weight: bold;
+    margin: 0px;
+}
+
+/* Project Section */
 .project_section{
     grid-row: 1 / -1;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1em 250px ;
+    grid-auto-rows: 250px;
+    gap: 20px;
+    margin: 20px;
 }
 
+.project{
+    box-shadow: inset 30px 0em gold;
+    padding: 30px 10px 30px 40px;
+}
+
+.project p {
+    margin: 0 0 10px;
+}
+
+/* Announcement Section */
+.announcement_section{
+    grid-row: 1/2;
+    margin: 20px;
+    
+}
+
+/* Trending Section */
+.trending_section{
+    grid-row: 2/3;
+    margin: 20px;
+}
 
 
 /* Styles */
+
+.project, .trending_list, .announcement_list{
+    background-color: white;
+    border-radius: 10px;
+}
+
+
 li{
     list-style-type: none;
 }
